@@ -1,6 +1,7 @@
 import 'babel-polyfill'
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'preact-compat';
+import { h, render } from 'preact';
+
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './components/App'

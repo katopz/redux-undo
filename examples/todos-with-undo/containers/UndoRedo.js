@@ -1,4 +1,4 @@
-import React from 'react'
+import { h, render } from 'preact';
 import { ActionCreators as UndoActionCreators } from 'redux-undo'
 import { connect } from 'react-redux'
 

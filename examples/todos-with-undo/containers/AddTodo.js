@@ -1,4 +1,4 @@
-import React from 'react'
+import { h, render } from 'preact';
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import { h, render } from 'preact';
 import FilterLink from '../containers/FilterLink'
 
 const Footer = () => (

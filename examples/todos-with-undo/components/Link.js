@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import { h, render } from 'preact';
+import PropTypes from 'proptypes';
 
 const Link = ({ active, children, onClick }) => {
   if (active) {

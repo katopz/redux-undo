@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import { h, render } from 'preact';
+import PropTypes from 'proptypes';
 import Todo from './Todo'
 
 const TodoList = ({ todos, onTodoClick }) => (
