@@ -7,6 +7,18 @@ const plugins = [
   new webpack.optimize.OccurenceOrderPlugin(),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
+  }),
+  new webpack.optimize.DedupePlugin(),
+  new webpack.optimize.UglifyJsPlugin({
+    compress: {
+      pure_getters: true,
+      unsafe: true,
+      unsafe_comps: true,
+      screw_ie8: true,
+      warnings: false
+    },
+    comments: false,
+    sourceMap: false
   })
 ]
 
@@ -41,6 +53,11 @@ export default {
     library: 'ReduxUndo',
     libraryTarget: 'umd'
   },
-
-  plugins
+  plugins,
+  resolve: {
+    alias: {
+      'react': 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
+  }
 }

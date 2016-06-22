@@ -67,6 +67,8 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
+    "preact": "^5.1.0-beta.17",
+    "preact-compat": "^1.8.1",
     "redux": "^3.5.1"
   }
 }
